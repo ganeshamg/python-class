@@ -22,3 +22,40 @@
 # gender = "M"
 # a = "Male" if gender=="M" else "Female"
 # print(a)
+
+# a = "ganesh"
+# print(a.upper())
+# print(a.title())
+# print(a. lower())
+# print(a.capitalize())
+
+
+# a = int(input("percentage of student"))
+# if(a>=80):
+#     print("distinction")
+# elif(a>=60 and a<80):
+#     print("first division")
+# elif(60>a>=40):
+#     print("second division")
+# elif(40>a>=30):
+#     print("third division")
+# else:
+#     print("fail")
+
+_marks = int(input("enter marks obtains"))
+
+print(_marks)
+
+if(_marks > 100 or _marks < 0):
+    print("your number is invalid. Number between 0 and 100 is only acceptable")
+elif(_marks >= 80):
+    print("you have scored a distinction")
+elif(_marks >= 60):
+    print("you have scored first division")
+elif(_marks >= 50):
+    print("you have scored second division")
+elif(_marks >= 40):
+    print("you have scored third division")
+else:
+    print("you have failed")
+    
