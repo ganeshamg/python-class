@@ -58,4 +58,23 @@ elif(_marks >= 40):
     print("you have scored third division")
 else:
     print("you have failed")
+
+# nested if
+percentage = float(input("enter the percentage of the student"))
+if(percentage>=40):
+    if(percentage<=100):
+        print("user is pass")
+        if(percentage>=80):
+            print("distinction")
+        elif(percentage>=60):
+            print("first division")
+        elif(percentage>=50):
+            print("second division")
+        elif(percentage>=40):
+            print("third division")
+    else:
+        print("the marks entered is invalid")
+else:
+    print("the student has failed")
+    
     
