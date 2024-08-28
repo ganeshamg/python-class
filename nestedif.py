@@ -60,21 +60,30 @@ else:
     print("you have failed")
 
 # nested if
-percentage = float(input("enter the percentage of the student"))
-if(percentage>=40):
-    if(percentage<=100):
-        print("user is pass")
-        if(percentage>=80):
-            print("distinction")
-        elif(percentage>=60):
-            print("first division")
-        elif(percentage>=50):
-            print("second division")
-        elif(percentage>=40):
-            print("third division")
-    else:
-        print("the marks entered is invalid")
-else:
-    print("the student has failed")
+# percentage = float(input("enter the percentage of the student"))
+# if(percentage>=40):
+#     if(percentage<=100):
+#         print("user is pass")
+#         if(percentage>=80):
+#             print("distinction")
+#         elif(percentage>=60):
+#             print("first division")
+#         elif(percentage>=50):
+#             print("second division")
+#         elif(percentage>=40):
+#             print("third division")
+#     else:
+#         print("the marks entered is invalid")
+# else:
+#     print("the student has failed")
     
-    
+n = "Ganesh Amgain Chhetri"
+print(n.upper())
+print(n.lower())
+print(n.title())
+print(n.capitalize())
+
+b = n.upper()
+print(b.count("A"))
+
+print(n.count("A"))
