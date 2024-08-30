@@ -77,13 +77,13 @@ else:
 # else:
 #     print("the student has failed")
     
-n = "Ganesh Amgain Chhetri"
-print(n.upper())
-print(n.lower())
-print(n.title())
-print(n.capitalize())
+# n = "Ganesh Amgain Chhetri"
+# print(n.upper())
+# print(n.lower())
+# print(n.title())
+# print(n.capitalize())
 
-b = n.upper()
-print(b.count("A"))
+# b = n.upper()
+# print(b.count("A"))
 
-print(n.count("A"))
+# print(n.count("A"))
