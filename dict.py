@@ -16,3 +16,55 @@ print(a.get("middle_name", "-"))
 # add key and value in dict
 a["broadway"]="python"
 print(a)
+
+print(a.get("Adress","Pokhara"))
+print(len(a))
+
+test = {
+     "name":"Broadway",
+     "company": "Technology",
+     "Number" : {
+         "type":"NTC", 
+         "mobile":"9841436920"
+         }
+}
+print(test.keys())
+
+
+test = {
+     "name":"Broadway",
+     "company": "Technology",
+     "Number" : [
+        {
+          "type":"NTC", 
+         "mobile":"9841436920"
+         },
+         {
+          "type":"Ncell",
+          "mobile":"98054"
+         },
+     ]
+}
+
+
+print(test.keys())
+
+test.update({"name":"ganesh"})
+print(test)
+
+# del test["Number"]
+# print(test)
+
+# tt= test.pop("Number")
+# print(test)
+# print(tt)
+
+# test.pop("Number")
+# print(test)
+# print(tt)
+
+test.popitem()
+print(test)
+
+test.clear()
+print(test)
