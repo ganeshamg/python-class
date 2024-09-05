@@ -14,8 +14,12 @@ bablu = {}
 #     print(f"2 x {i} = {2*i}")
     
 # Asignment Table of 3
-for i in range(1, 11):
-    print(f"5 x {i} = {5*i}")
+# for i in range(1, 11):
+#     print(f"5 x {i} = {5*i}")
+
+n = int(input("enter a number"))
+for i in range(1,11):
+    print(f"{n} x {i} = {n*i}")2,3,5
 
 
 
