@@ -62,3 +62,62 @@ bablu = {}
 #     print('*' * i)
     
 
+# import random
+# a = random.randrange(1,10)
+# score = 100
+# count = 1
+# while score==200:
+#     if(a%2==0):
+#         print("hit")
+#         score = score + 20
+#     else:
+#         print("miss")
+#         score = score - 20
+#     count = count + 1
+# print()
+# print(f high score reached in {count} times)
+
+
+# Hit or Miss Game
+import random
+
+def hit_or_miss():
+    # Computer selects a random number between 1 and 100
+    target = random.randint(1, 100)
+    attempts = 0
+    score = 100  # Player starts with 100 points
+    
+    print("Welcome to the Hit or Miss game!")
+    print("I have selected a number between 1 and 100. Can you guess it?")
+    print("You start with 100 points. Each miss deducts 20 points, and a hit adds 20 points.")
+    
+    while True:
+        # Player inputs their guess
+        try:
+            guess = int(input("Enter your guess: "))
+        except ValueError:
+            print("Please enter a valid number.")
+            continue
+        
+        attempts += 1
+        
+        # Check if the guess is correct
+        if guess < target:
+            score -= 20
+            print(f"Miss! Your guess is too low. Current score: {score}")
+        elif guess > target:
+            score -= 20
+            print(f"Miss! Your guess is too high. Current score: {score}")
+        else:
+            score += 20
+            print(f"Hit! You've guessed the correct number {target} in {attempts} attempts.")
+            print(f"Your final score is: {score}")
+            break
+        
+        # Prevent negative scores
+        if score <= 0:
+            print("Game over! You've run out of points.")
+            break
+
+if __name__ == "__main__":
+    hit_or_miss()
