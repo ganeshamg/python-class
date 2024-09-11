@@ -37,3 +37,15 @@ another_car = Car("Honda", "Civic", 2019)
 # Call method and access attributes for another object
 print(another_car.car_info())  # Output: 2019 Honda Civic
 
+
+class test2():
+    name = "broadway"
+    subject = "python"
+
+    def reading(self):
+       # return "i am readin python at broadway"
+        return f'i am reading {self.subject} at {self.name}'
+obj1 = test2()
+print(obj1.reading())
+
+
