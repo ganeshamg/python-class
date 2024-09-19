@@ -14,6 +14,10 @@
 # except:
 #     print('file already excits')
 
-f = open("ganesh.py", "w+")
-f.write("trying")
-print(f.read())
+# f = open("ganesh.py", "w+")
+# f.write("trying")
+# print(f.read())
+
+# to delete file
+import os
+os.remove("os.remove.py")
